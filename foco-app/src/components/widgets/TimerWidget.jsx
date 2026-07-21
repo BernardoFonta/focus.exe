@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { useTimerStore } from '../../store/useTimerStore';
+import '../../index.css';
 
 export default function TimerWidget() {
   // Puxamos as variáveis e funções do nosso "cérebro" (Zustand)
@@ -50,7 +51,7 @@ export default function TimerWidget() {
   // O que vai aparecer na tela:
   return (
     <div className="flex flex-col items-center justify-center h-full text-white">
-      <h2 className="text-xl font-semibold mb-2">Foco</h2>
+      <h2 className="text-xl font-mono mb-2">Foco</h2>
       
       {/* Mostrador do Relógio */}
       <div className="text-6xl font-bold font-mono mb-6">

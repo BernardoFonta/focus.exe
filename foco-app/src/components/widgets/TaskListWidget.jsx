@@ -18,7 +18,7 @@ export default function TaskListWidget() {
   };
 
   return (
-    <div className="flex flex-col h-full text-white">
+    <div className="flex flex-col h-full text-white bg-gray-800">
       <h2 className="text-xl font-semibold mb-4">Tarefas</h2>
       
       {/* Formulário para adicionar tarefa */}

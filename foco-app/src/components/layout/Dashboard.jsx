@@ -13,8 +13,10 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 p-8 text-white">
-      <h1 className="text-3xl font-bold mb-6">Meu Focus Timer</h1>
+    <div className="min-h-screen bg-gray-400 p-8 text-white">
+      <h1 className="text-4xl mb-6">Meu Focus Timer</h1>
+      <p className="font-mono text-4xl mb-6">Meu ffdfFocus Timer</p>
+
 
       <GridLayout
         className="layout"
@@ -27,7 +29,7 @@ export default function Dashboard() {
         isResizable={true}
       >
         /* Usamos key="timer" para bater com o id definido no Zustand */
-        <div key="timer" className="bg-gray-800 rounded-lg p-4 shadow-lg border border-gray-700">
+        <div key="timer" className="bg-gray-800 rounded-lg p-4 shadow-lg border border-gray-700 flex flex-col">
           <TimerWidget />
         </div>
         <div key="tasks" className="bg-gray-800 rounded-lg p-4 shadow-lg border border-gray-700 flex flex-col">
