@@ -6,6 +6,8 @@ export const useLayoutStore = create(
     (set) => ({
       layout: [
         { i: 'timer', x: 0, y: 0, w: 4, h: 2 }, // i = id da div, x e y = posição, w e h = largura e altura
+
+        { i: 'tasks', x: 4, y: 0, w: 4, h: 4 }
       ],
       setLayout: (newLayout) => set({ layout: newLayout }),
     }),
