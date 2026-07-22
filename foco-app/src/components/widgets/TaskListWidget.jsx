@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTaskStore } from '../../store/useTaskStore';
 import { CheckCircle2, Circle, Trash2, Plus } from 'lucide-react';
-
+import '../../index.css';
 export default function TaskListWidget() {
   // Puxamos as funções e a lista do nosso estado global
   const { tasks, addTask, toggleTask, deleteTask } = useTaskStore();
